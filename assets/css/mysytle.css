@@ -1,0 +1,53 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+header{
+    margin-top: 2rem;
+    width: 100vh;
+}
+h1{
+    text-align: center;
+
+}
+nav{
+    background-image: url(../img/design1_image2.jpg);
+    height: 20vh;
+    width: 100vh;
+    margin-left: 6rem;
+    text-align: right;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2rem;
+}
+.title2{
+    text-align: center;
+    border: solid 1px;
+    width: 100vh;
+    margin-left: 6rem;
+}
+main{
+    display: inline-block;
+    min-height: 70vh;
+}
+aside{
+    display: inline-block;
+    margin-left: 10rem;
+    width:25vh;
+}
+section{
+    display: inline-block;
+    width:75vh;
+    
+}
+footer{
+    display: block;
+    text-align: center;
+    min-height: 5vh;
+}
