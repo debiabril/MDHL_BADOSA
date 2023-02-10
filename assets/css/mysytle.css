@@ -15,7 +15,7 @@ h1{
     margin-left: 10%;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
 }
 nav{
     background-image: url(../img/design1_image2.jpg);
@@ -63,29 +63,45 @@ section{
     width: 80%;
     margin-left: 10%;
     position: relative;
+    font-size: x-large;
 }
 .logo{
     width: 60%;
 }
 aside{
     display: inline-block;
-    margin-left: 15%;
-    width:13%;
-
     
+    margin-left: 15%;
+    width:13%; 
 }
-.aboutlogo{
-    margin-top: -10rem;
+article{
+    color: black;
+    padding: 5px;
 }
+#aboutlogo{
+    position: relative;
+    top: -8.5rem;
+}
+#contact-article{
+    position: relative;
+    top: -1.5rem;
+}
+/*
+#imagen1{
+    position: relative;
+    width: 20rem;
+}*/
 .container{
     display: inline-block;
     padding-left: 5%;
     height: 100%;
     width: 60%; 
-    
 }
-/*footer{
-    display: block;
-    text-align: center;
-    min-height: 5vh;
-}*/
+
+footer{
+    display: inline;
+    min-height: 3vh;
+    position: fixed;
+    bottom: 0;
+    left: 45%;
+}
