@@ -10,6 +10,7 @@ body{
 header{
     margin-top: 1rem;
     width: 100%;
+
 }
 h1{
     margin-left: 10%;
@@ -36,9 +37,10 @@ nav{
     border-style: solid;
     border-color: black;
     background-color: blue;
-    padding: 0.7rem;
+    width: 10rem;
+    padding: 0.25rem 1rem;
     margin: 0.25rem;
-    box-shadow: 5px 2px 2px 2px rgba(0, 0, 0, 0.363);
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.438);
     position: relative;
     top: -3%;
     right: 2%;
@@ -50,7 +52,7 @@ a[href="#"]{
 main{
     display:block;
     width: 100%;
-
+    min-height: 70vh;
 }
 section{
     display: inline-block;
@@ -84,13 +86,30 @@ article{
 }
 #contact-article{
     position: relative;
-    top: -1.5rem;
+    top: -1rem;
 }
-/*
-#imagen1{
-    position: relative;
-    width: 20rem;
-}*/
+
+#img1{
+    position: absolute;
+    transform: translate(200%, 10%);
+    transition: 3s;
+    width: 15rem;
+    opacity: 0.75;
+}
+#img2{
+    position: absolute;
+    transform: translate(-60%, 70%);
+    transition: 3s;
+    width: 15rem;
+    opacity: 0.5;
+}
+#img3{
+    position: absolute;
+    transform: translate(250%, -10%);
+    transition: 3s;
+    width: 12rem;
+    opacity: 0.75;
+}
 .container{
     display: inline-block;
     padding-left: 5%;
@@ -101,7 +120,5 @@ article{
 footer{
     display: inline;
     min-height: 3vh;
-    position: fixed;
-    bottom: 0;
-    left: 45%;
+    text-align: center;
 }
