@@ -2,7 +2,7 @@
 padding: 0;
 margin: 0;
 box-sizing: border-box;
-font-family: 'Nunito', sans-serif;
+font-family: cursive;
 }
 body{
     width: 100%;
@@ -41,13 +41,15 @@ nav{
     color: white;
     font-weight: bold;
     font-size: large;
+    text-align: center;
     text-decoration: none;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     background-color: rgb(255, 0, 0);
-    width: 10rem;
-    padding: 0.25rem 1rem;
+    width: 14rem;
+    min-height: 2rem;
+    padding: 0.25rem;
     margin: 0.25rem;
     box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.438); 
 }
@@ -70,7 +72,7 @@ section{
     text-align: center;
     border: solid 1px black;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: red;
 }
 article{
@@ -102,8 +104,31 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     height: 100%;
-    width: 100%; 
+    width: 80%; 
+}
+.rules{
+    padding-left: 5rem;
+    justify-content: center;
+    text-align: left;
+}
+.rules>dl>dt{
+    font-weight: bold;
+    text-align: center;
+}
+.rules>h4{
+    text-align: center;
+}
+ol>li>ol>li{
+    list-style-type:upper-roman;
+    margin-left: 4rem;
+}
+#centrarP{
+    text-align: center;
+}
+#none-style-li{
+    list-style-type: circle;
 }
 
 footer{
