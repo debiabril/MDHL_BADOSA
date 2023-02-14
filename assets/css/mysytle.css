@@ -6,27 +6,36 @@ font-family: 'Nunito', sans-serif;
 }
 body{
     width: 100%;
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,0,0,0.5410539215686274) 100%);
 }
 header{
-    margin-top: 1rem;
     width: 100%;
-
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 h1{
-    margin-left: 10%;
-    margin-bottom: 0.5rem;
+    display:flex;
+    align-self: center;
+    margin-left: 2rem;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 2.5rem;
+}
+.logo{
+    width: 6rem;
 }
 nav{
     background-image: url(../img/design1_image2.jpg);
     background-size: cover;
     background-position: 0 40%;
-    height: 40vh;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: right;
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
 }
 .nav-link{
     color: white;
@@ -36,59 +45,38 @@ nav{
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    background-color: blue;
+    background-color: rgb(255, 0, 0);
     width: 10rem;
     padding: 0.25rem 1rem;
     margin: 0.25rem;
-    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.438);
-    position: relative;
-    top: -3%;
-    right: 2%;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.438); 
 }
 a[href="#"]{
-    background-color: rgb(2, 198, 2);
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 main{
     display:block;
     width: 100%;
-    min-height: 70vh;
+    min-height: 60vh;
 }
 section{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width:100%;
- 
 }
 .title2{
     text-align: center;
-    border: solid 1px;
-    width: 80%;
-    margin-left: 10%;
-    position: relative;
-    font-size: x-large;
-}
-.logo{
-    width: 60%;
-}
-aside{
-    display: inline-block;
-    
-    margin-left: 15%;
-    width:13%; 
+    border: solid 1px black;
+    width: 100%;
+    font-size: 2rem;
+    color: red;
 }
 article{
     color: black;
     padding: 5px;
 }
-#aboutlogo{
-    position: relative;
-    top: -8.5rem;
-}
-#contact-article{
-    position: relative;
-    top: -1rem;
-}
-
 #img1{
     position: absolute;
     transform: translate(200%, 10%);
@@ -111,14 +99,16 @@ article{
     opacity: 0.75;
 }
 .container{
-    display: inline-block;
-    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
-    width: 60%; 
+    width: 100%; 
 }
 
 footer{
-    display: inline;
+    flex-direction: column;
     min-height: 3vh;
     text-align: center;
+
 }
