@@ -1,0 +1,124 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Nunito', sans-serif;
+}
+body{
+    width: 100%;
+}
+header{
+    margin-top: 1rem;
+    width: 100%;
+
+}
+h1{
+    margin-left: 10%;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: xx-large;
+}
+nav{
+    background-image: url(../img/design1_image2.jpg);
+    background-size: cover;
+    background-position: 0 40%;
+    height: 40vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: right;
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: blue;
+    width: 10rem;
+    padding: 0.25rem 1rem;
+    margin: 0.25rem;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.438);
+    position: relative;
+    top: -3%;
+    right: 2%;
+}
+a[href="#"]{
+    background-color: rgb(2, 198, 2);
+}
+
+main{
+    display:block;
+    width: 100%;
+    min-height: 70vh;
+}
+section{
+    display: inline-block;
+    width:100%;
+ 
+}
+.title2{
+    text-align: center;
+    border: solid 1px;
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    font-size: x-large;
+}
+.logo{
+    width: 60%;
+}
+aside{
+    display: inline-block;
+    
+    margin-left: 15%;
+    width:13%; 
+}
+article{
+    color: black;
+    padding: 5px;
+}
+#aboutlogo{
+    position: relative;
+    top: -8.5rem;
+}
+#contact-article{
+    position: relative;
+    top: -1rem;
+}
+
+#img1{
+    position: absolute;
+    transform: translate(200%, 10%);
+    transition: 3s;
+    width: 15rem;
+    opacity: 0.75;
+}
+#img2{
+    position: absolute;
+    transform: translate(-60%, 70%);
+    transition: 3s;
+    width: 15rem;
+    opacity: 0.5;
+}
+#img3{
+    position: absolute;
+    transform: translate(250%, -10%);
+    transition: 3s;
+    width: 12rem;
+    opacity: 0.75;
+}
+.container{
+    display: inline-block;
+    padding-left: 5%;
+    height: 100%;
+    width: 60%; 
+}
+
+footer{
+    display: inline;
+    min-height: 3vh;
+    text-align: center;
+}
