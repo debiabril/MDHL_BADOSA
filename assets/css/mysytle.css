@@ -57,7 +57,6 @@ a[href="#"]{
     background-color: rgb(255, 255, 255);
     color: black;
 }
-
 main{
     display:flex;
     flex-direction: column;
@@ -69,6 +68,9 @@ section{
     flex-direction: column;
     justify-content: center;
     width:100%;
+}article{
+    color: black;
+    padding: 5px;
 }
 .title2{
     text-align: center;
@@ -77,15 +79,11 @@ section{
     font-size: 1.5rem;
     color: red;
 }
-article{
-    color: black;
-    padding: 5px;
-}
-.imgGalery{
-    width: 15rem;
-}
-.imgGalery:hover{
-    width: 20rem;
+.title3{
+    text-align: center;
+    margin: 2rem 0;
+    border: dotted 1px rgb(255, 0, 0);
+    
 }
 .container{
     display: flex;
@@ -102,7 +100,16 @@ article{
     justify-content: space-around;
     border-color: black;
 }
+.imgGalery{
+    width: 15rem;
+    border: solid 3px black;
+    box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.438); 
 
+}
+.imgGalery:hover{
+    transform: scale(1.5) translate(-20%, -20%);
+    transition: 1.5s;
+}
 .rules{
     padding-left: 5rem;
     justify-content: center;
@@ -110,9 +117,6 @@ article{
 }
 .rules>dl>dt{
     font-weight: bold;
-    text-align: center;
-}
-.rules>h4{
     text-align: center;
 }
 ol>li{
@@ -128,10 +132,15 @@ td{
 .centrarTexto{
     text-align: center;
 }
+.bold{
+    font-weight: bold;
+}
 #none-style-li{
     list-style-type: circle;
 }
-
+#marginTop{
+    margin-top: 1.5rem;
+}
 footer{
     flex-direction: column;
     min-height: 3vh;
