@@ -8,7 +8,7 @@ body{
     width: 100%;
     display:flex;
     flex-direction: column;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,0,0,0.5410539215686274) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,0,0,0.5410539215686274) 100%);
 }
 header{
     width: 100%;
@@ -59,13 +59,15 @@ a[href="#"]{
 }
 
 main{
-    display:block;
+    display:flex;
+    flex-direction: column;
     width: 100%;
     min-height: 60vh;
 }
 section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width:100%;
 }
 .title2{
@@ -79,35 +81,28 @@ article{
     color: black;
     padding: 5px;
 }
-#img1{
-    position: absolute;
-    transform: translate(200%, 10%);
-    transition: 3s;
+.imgGalery{
     width: 15rem;
-    opacity: 0.75;
 }
-#img2{
-    position: absolute;
-    transform: translate(-60%, 70%);
-    transition: 3s;
-    width: 15rem;
-    opacity: 0.5;
-}
-#img3{
-    position: absolute;
-    transform: translate(250%, -10%);
-    transition: 3s;
-    width: 12rem;
-    opacity: 0.75;
+.imgGalery:hover{
+    width: 20rem;
 }
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    align-self:center;
     height: 100%;
-    width: 80%; 
+    width: 95%; 
 }
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-color: black;
+}
+
 .rules{
     padding-left: 5rem;
     justify-content: center;
@@ -120,11 +115,17 @@ article{
 .rules>h4{
     text-align: center;
 }
-ol>li>ol>li{
-    list-style-type:upper-roman;
-    margin-left: 4rem;
+ol>li{
+    padding: 0.5rem 0;
 }
-#centrarP{
+ol>li>ol>li{
+    list-style-type:lower-latin;
+    margin-left: 3rem;
+}
+td{
+    text-align:center;
+}
+.centrarTexto{
     text-align: center;
 }
 #none-style-li{
@@ -135,5 +136,4 @@ footer{
     flex-direction: column;
     min-height: 3vh;
     text-align: center;
-
 }
