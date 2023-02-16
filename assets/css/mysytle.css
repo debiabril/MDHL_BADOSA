@@ -141,6 +141,9 @@ td{
 #marginTop{
     margin-top: 1.5rem;
 }
+fieldset{
+    border: none;
+}
 select[multiple] {
     height: 1.5em;
     vertical-align: top;
@@ -148,6 +151,51 @@ select[multiple] {
 select[multiple]:focus,
 select[multiple]:active {
     height: auto;
+}
+form{
+    display:flex;
+}
+fieldset{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+}
+fieldset>label{
+    display: flex;
+    width: 50%; 
+    
+}
+fieldset>h3{
+    width: 100%;
+}
+.formGroup{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+input, select{
+    background-color:rgba(255, 234, 196, 0.521);
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.363);
+}
+label>input{
+    margin-left:2rem;
+}
+input[type=text]{
+    width: 50%;
+    text-align: center;
+}
+
+#permission{
+    margin: 1.5rem 0;
+}
+input[type=submit]{
+    margin-top: 1rem;
+    border-color: aliceblue;
+    background-color: rgb(255, 210, 127);
+    border-radius:10px;
+
 }
 footer{
     flex-direction: column;
