@@ -129,6 +129,12 @@ ol>li>ol>li{
 td{
     text-align:center;
 }
+th, td{
+    border: 0.25px solid  rgba(255, 94, 0, 0.527);
+}
+.borderNone{
+    border:none;
+}
 .centrarTexto{
     text-align: center;
 }
@@ -186,7 +192,6 @@ input[type=text]{
     width: 50%;
     text-align: center;
 }
-
 #permission{
     margin: 1.5rem 0;
 }
@@ -195,7 +200,21 @@ input[type=submit]{
     border-color: aliceblue;
     background-color: rgb(255, 210, 127);
     border-radius:10px;
-
+}
+#mapas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+iframe{
+    border-radius: 10px;
+    border-color: rgba(255, 0, 0, 0.384);
+    box-shadow: 2px 2px 3.5px 2px rgba(0, 0, 0, 0.438);
+    margin: 0.5rem 0;
+}
+iframe:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
 }
 footer{
     flex-direction: column;
