@@ -35,7 +35,6 @@ nav{
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-
 }
 .nav-link{
     color: white;
@@ -196,10 +195,14 @@ input[type=text]{
     margin: 1.5rem 0;
 }
 input[type=submit]{
+    display: flex;
     margin-top: 1rem;
     border-color: aliceblue;
     background-color: rgb(255, 210, 127);
     border-radius:10px;
+    width: 20%;
+    justify-content: center;
+    align-self: center;
 }
 #mapas{
     flex-direction: row;

@@ -24,19 +24,19 @@
     <main>
         <h2 class="title2">Registration Form</h2>
         <form action="./show_data.html" method="get" class="container form">
-            <fieldset>
+            <fieldset class="">
                 <label>Player’s First Name:<input type="text" name="first_name" placeholder="First name"></label>
                 <label>Last name:<input type="text" name="last_name" placeholder="Last name"></label>
                 <label id="address">Street Address:<input type="text" name="street_address" placeholder="Street address"></label>
                 <label>City: <input type="text" name="city" placeholder="Enter your City"></label>
-                <label>Zip Code: <input type="number" name="zip_code" max="999999999"></label>
-                <label >Birth Date(mm/dd/yyyy): <input type="date" name="birth_date"></label>
+                <label>Zip Code: <input type="text" name="zip_code" placeholder="Enter your Zip Code"></label>
+                <label >Birth Date: <input type="text" name="birth_date" placeholder="(mm/dd/yyyy)"></label>
                 <div class="formGroup">
                     <label>Gender: </label>
                     <label><input type="radio" name="gender" value="Female">Female</label>
                     <label><input type="radio" name="gender" value="Male">Male</label>
                 </div>
-                <div>
+                <div >
                     <label>Grade: </label>
                     <label><input type="radio" name="grade" value="pre_school">Pre-School</label>
                     <label><input type="radio" name="grade" value="1st">1st</label>
