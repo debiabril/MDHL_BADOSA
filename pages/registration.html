@@ -24,13 +24,13 @@
     <main>
         <h2 class="title2">Registration Form</h2>
         <form action="./show_data.html" method="get" class="container form">
-            <fieldset class="">
+            <fieldset>
                 <label>Player’s First Name:<input type="text" name="first_name" placeholder="Player’s first name"></label>
                 <label>Last name:<input type="text" name="last_name" placeholder="Player’s last name"></label>
                 <label id="address">Street Address:<input type="text" name="street_address" placeholder="Player’s street address"></label>
                 <label>City: <input type="text" name="city" placeholder="Player’s City"></label>
                 <label>Zip Code: <input type="text" name="zip_code" placeholder="Player’s Zip Code"></label>
-                <label >Birth Date: <input type="text" name="birth_date" placeholder="(mm/dd/yyyy)"></label>
+                <label >Birth Date: <input type="date" name="birth_date"></label>
                 <div class="formGroup">
                     <label>Gender: </label>
                     <label><input type="radio" name="gender" value="Female">Female</label>
@@ -80,7 +80,7 @@
                 <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation</p>        
                 <p>By entering your name below, I herebyagree andauthorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.</p>
             </div>
-            <label>Parent/Guardian Signature: <input type="text" name="signature" required placeholder="Enter your name"></label>
+            <label id="signature">Parent/Guardian Signature: <input type="text" name="signature" required placeholder="Enter your name"></label>
             <label>Date: <input type="date" name="date"></label>
             <input type="submit" value="Send">
         </form>
