@@ -8,7 +8,7 @@ body{
     width: 100%;
     display:flex;
     flex-direction: column;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,0,0,0.5410539215686274) 100%);
+    background: linear-gradient(90deg, rgba(255, 105, 19, 0.466) 0%, rgba(255, 0, 0, 0.527) 100%);
 }
 header{
     width: 100%;
@@ -35,7 +35,6 @@ nav{
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-
 }
 .nav-link{
     color: white;
@@ -46,7 +45,7 @@ nav{
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(245, 57, 24, 0.788);
     width: 14rem;
     min-height: 2rem;
     padding: 0.25rem;
@@ -129,6 +128,12 @@ ol>li>ol>li{
 td{
     text-align:center;
 }
+th, td{
+    border: 0.25px solid  rgba(255, 94, 0, 0.527);
+}
+.borderNone{
+    border:none;
+}
 .centrarTexto{
     text-align: center;
 }
@@ -141,8 +146,163 @@ td{
 #marginTop{
     margin-top: 1.5rem;
 }
+fieldset{
+    border: none;
+}
+select[multiple] {
+    height: 1.5em;
+    vertical-align: top;
+}
+select[multiple]:focus,
+select[multiple]:active {
+    height: auto;
+}
+form{
+    display:flex;
+}
+fieldset{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+}
+fieldset>label{
+    display: flex;
+    width: 50%; 
+}
+fieldset>h3{
+    width: 100%;
+}
+.formGroup{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+input, select{
+    background-color:rgba(255, 234, 196, 0.521);
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.363);
+}
+label>input{
+    margin-left:2rem;
+}
+input[type=text]{
+    width: 50%;
+    text-align: center;
+}
+#permission{
+    margin: 1.5rem 0;
+}
+input[type=submit]{
+    display: flex;
+    margin-top: 1rem;
+    border-color: aliceblue;
+    background-color: rgb(255, 210, 127);
+    border-radius:10px;
+    width: 20%;
+    justify-content: center;
+    align-self: center;
+}
+#mapas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+iframe{
+    border-radius: 10px;
+    border-color: rgba(255, 0, 0, 0.384);
+    box-shadow: 2px 2px 3.5px 2px rgba(0, 0, 0, 0.438);
+    margin: 0.5rem 0;
+}
+iframe:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
+}
 footer{
     flex-direction: column;
     min-height: 3vh;
     text-align: center;
+}
+@media (max-width:1057px){
+    nav{
+        max-height: 5vh;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        
+    }
+    .nav-link{
+        flex-wrap:wrap;
+        width: 25%;
+        height: auto;
+        align-items: flex-start;   
+    }
+}
+@media (max-width:750px){
+    header {
+        max-height: 5vh;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .logo{
+        width:4rem;
+    }
+    nav{
+        max-height: 5vh;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: space-around;
+    }
+    .nav-link{
+        width:45%;
+        height: auto;
+        align-items: flex-start;
+        
+    }
+    .gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rules{
+        padding:1rem;
+    }
+    fieldset{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        margin: 1rem 1rem;
+    }
+    fieldset>label{
+        display: flex;
+        width: 100%; 
+    }
+    .formGroup{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    input, select{
+        background-color:rgba(255, 234, 196, 0.521);
+        border-radius: 5px;
+        border-color: rgba(0, 0, 0, 0.363);
+    }
+    label>input{
+        margin-left:2rem;
+    }
+    input[type=text]{
+        width: 70%;
+        text-align: center;
+    }
+    #signature>input[type=text]{
+        width: 60%;
+        text-align: center;
+    }
+    #permission{
+        margin: 1.5rem 0;
+    }
 }
